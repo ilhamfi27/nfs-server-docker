@@ -1,0 +1,17 @@
+/nfs/share/production *(sync,rw,insecure,no_root_squash,no_subtree_check)
+/nfs/share/staging *(sync,rw,insecure,no_root_squash,no_subtree_check)
+
+/nfs/share/production 154.26.131.99(sync,rw,insecure,no_subtree_check)
+/nfs/share/production 194.233.82.234(sync,rw,insecure,no_subtree_check)
+/nfs/share/production 154.26.131.137(sync,rw,insecure,no_subtree_check)
+/nfs/share/production 154.26.131.145(sync,rw,insecure,no_subtree_check)
+/nfs/share/production 154.26.131.184(sync,rw,insecure,no_subtree_check)
+
+/nfs/share/staging 194.233.93.185(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 154.26.129.169(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 154.26.129.165(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 194.233.81.20(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 194.233.81.19(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 154.26.128.239(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 154.26.128.238(sync,rw,insecure,no_subtree_check)
+/nfs/share/staging 154.26.129.7(sync,rw,insecure,no_subtree_check)

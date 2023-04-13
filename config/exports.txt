@@ -1,0 +1,2 @@
+/nfs/share/production *(rw,insecure,sync,no_subtree_check)
+/nfs/share/staging *(rw,insecure,sync,no_subtree_check)

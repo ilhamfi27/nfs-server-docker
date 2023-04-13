@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  nfs:
+    image: erichough/nfs-server
+    restart: unless-stopped
+    volumes:
+      - ./volumes/nfs-share-production:/nfs/share/production
+      - ./volumes/nfs-share-staging:/nfs/share/staging
+      - ./config/exports.txt:/etc/exports:ro
+      - /lib/modules:/lib/modules:ro
+    cap_add:
+      - SYS_ADMIN
+      - SYS_MODULE
+    ports:
+      - 0.0.0.0:111:111
+      - 0.0.0.0:2049:2049
+      - 0.0.0.0:32765:32765
+      - 0.0.0.0:32767:32767
+    security_opt:
+      - apparmor=erichough-nfs
